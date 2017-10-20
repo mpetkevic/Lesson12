@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #1e202c; }
+
+h1 {
+  margin: 25px 0;
+  font-size: 48px;
+  text-align: center;
+  color: white; }
+
+.preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  display: none; }
+  .preview:target {
+    display: block; }
+  .preview #preview-close {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    font-size: 48px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.74); }
+  .preview img {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.col {
+  position: relative;
+  height: 200px;
+  margin: 15px;
+  background-color: white;
+  transition: box-shadow 0.5s; }
+  .col:hover {
+    box-shadow: 0px 0px 26px 3px rgba(255, 255, 255, 0.2); }
+  .col .layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.74);
+    opacity: 0;
+    transition: opacity 0.5s; }
+    .col .layer:hover {
+      opacity: 1; }
+    .col .layer h4 {
+      margin: 15px 0;
+      font-size: 20px; }
+    .col .layer p {
+      width: 70%;
+      margin: 0 auto;
+      font-size: 14px; }
+    .col .layer a {
+      display: block;
+      width: 40%;
+      height: 30px;
+      margin: 15px auto;
+      font-size: 14px;
+      line-height: 30px;
+      border-radius: 30px;
+      color: #1e202c;
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.74);
+      transition: all 0.5s; }
+      .col .layer a:hover {
+        background-color: #1e202c;
+        color: rgba(255, 255, 255, 0.74); }
+
+.first {
+  background-image: url(../img/pic1.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.second {
+  background-image: url(../img/pic2.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.third {
+  background-image: url(../img/pic3.jpg);
+  background-position: center;
+  background-size: cover; }
